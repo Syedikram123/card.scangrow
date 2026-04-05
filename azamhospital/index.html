@@ -234,6 +234,10 @@ body{
 .action-card.envelope i {
   color: #D44638;
 }
+
+.action-card.save-contact i {
+  color: #3b82f6;
+}
 </style>
 </head>
 
@@ -244,7 +248,7 @@ body{
     <img src="../assets/azam.jpg" alt="logo">
   </div>
   <div class="title">Azam Hospital</div>
-  <div class="subtitle">Your Health is our Priority</div>
+  <div class="subtitle">Your Health, Our Priority - Dr. Rafeeq</div>
 </div>
 
 <div class="card">
@@ -258,17 +262,21 @@ body{
     <i class="fa-solid fa-phone"></i>
     <span>Call</span>
   </a>
+  
+  <a href="contact.vcf" download class="action-card save-contact">
+  <i class="fa-solid fa-address-book"></i>
+  <span>Save Contact</span>
+</a>
+
+<a href="https://maps.app.goo.gl/kTd6Vv5ZHdAYX4q86" class="action-card location" target="_blank">
+    <i class="fa-solid fa-location-dot"></i>
+    <span>Location</span>
+  </a>
 
   <a href="https://wa.me/916364369405" class="action-card whatsapp" target="_blank">
     <i class="fa-brands fa-whatsapp"></i>
     <span>WhatsApp</span>
   </a>
-
-  <a href="https://maps.app.goo.gl/kTd6Vv5ZHdAYX4q86" class="action-card location" target="_blank">
-    <i class="fa-solid fa-location-dot"></i>
-    <span>Location</span>
-  </a>
-  
 
   <a href="https://www.instagram.com/azamhospital" class="action-card instagram" target="_blank">
     <i class="fa-brands fa-instagram"></i>
@@ -301,7 +309,7 @@ body{
   <div id="about">
     <p>
       Providing compassionate, advanced healthcare with expert doctors, modern technology, and patient-centered care.<br><br>
-      - Azam Hospital 
+      - Dr. Rafeeq H.
     </p>
   </div>
 
@@ -316,7 +324,7 @@ function toggleAbout(){
 function sharePage(){
   if(navigator.share){
     navigator.share({
-      title:"Modern Dresses",
+      title:"Azam Hospital",
       text:"Check this out",
       url:window.location.href
     });

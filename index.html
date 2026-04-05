@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
+
 <title>ScanGrow | Smart Visiting Cards</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -242,6 +243,23 @@ display:block;
 }
 .hero h1{font-size:28px;}
 }
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.logo img {
+  width: 36px;
+  height: auto;
+}
+
+section {
+  scroll-margin-top: 50px;
+}
 </style>
 </head>
 
@@ -249,20 +267,25 @@ display:block;
 
 <!-- HEADER -->
 <header>
-<div class="container nav">
-<div class="logo">ScanGrow</div>
+  <div class="container nav">
 
-<div class="menu-toggle" onclick="toggleMenu()">
-<i class="fa-solid fa-bars"></i>
-</div>
+    <div class="logo">
+      <img src="assets/logo.jpg" alt="ScanGrow Logo">
+      <span>ScanGrow</span>
+    </div>
 
-<div class="nav-links" id="navLinks">
-<a href="#">Home</a>
-<a href="#features">Features</a>
-<a href="#pricing">Pricing</a>
-<a href="#contact">Contact</a>
-</div>
-</div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#">Home</a>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+  </div>
 </header>
 
 <!-- HERO -->
@@ -336,9 +359,9 @@ Easy Sharing
 <div class="pricing">
 
 <div class="price-card">
-<img src="assets/pic1.png">
+<img src="assets/pic1.jpg">
 <h3>Basic</h3>
-<div class="price">₹1499</div>
+<div class="price">₹999</div>
 <ul>
 <li>1000 Cards</li>
 <li>180 GSM</li>
@@ -352,9 +375,9 @@ Easy Sharing
 </div>
 
 <div class="price-card">
-<img src="assets/pic2.png">
+<img src="assets/pic2.jpg">
 <h3>Business</h3>
-<div class="price">₹2499</div>
+<div class="price">₹1999</div>
 <ul>
 <li>1000 Cards</li>
 <li>300 GSM</li>
@@ -368,9 +391,9 @@ Easy Sharing
 </div>
 
 <div class="price-card">
-<img src="assets/pic3.png">
+<img src="assets/pic3.jpg">
 <h3>Premium</h3>
-<div class="price">₹3499</div>
+<div class="price">₹2999</div>
 <ul>
 <li>1000 Cards</li>
 <li>300 GSM</li>

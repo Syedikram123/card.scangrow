@@ -212,7 +212,7 @@ body{
 
 /* BRAND COLORS */
 .action-card.whatsapp i {
-  color: #25D366;
+  color: #22c55e;
 }
 
 .action-card.instagram i {
@@ -234,6 +234,16 @@ body{
 .action-card.envelope i {
   color: #D44638;
 }
+
+.action-card.save-contact i {
+  color: #3b82f6;
+}
+
+.action-card.snapchat i {
+  background: #FFFC00;
+    color: #000;
+}
+
 </style>
 </head>
 
@@ -259,14 +269,19 @@ body{
     <span>Call</span>
   </a>
 
+<a href="contact.vcf" download class="action-card save-contact">
+  <i class="fa-solid fa-address-book"></i>
+  <span>Save Contact</span>
+</a>
+
+<a href="https://maps.app.goo.gl/382ZDhrJkkBmwn739" class="action-card location" target="_blank">
+    <i class="fa-solid fa-location-dot"></i>
+    <span>Location</span>
+  </a>
+
   <a href="https://wa.me/916364369405?text=Want%20Basic%20Smart%20Visiting%20Cards" class="action-card whatsapp" target="_blank">
     <i class="fa-brands fa-whatsapp"></i>
     <span>WhatsApp</span>
-  </a>
-
-  <a href="https://maps.app.goo.gl/382ZDhrJkkBmwn739" class="action-card location" target="_blank">
-    <i class="fa-solid fa-location-dot"></i>
-    <span>Location</span>
   </a>
   
 
@@ -280,10 +295,6 @@ body{
     <span>Gmail</span>
   </a>
   
-  <a href="https://www.youtube.com/@scangrow" class="action-card youtube" target="_blank">
-    <i class="fa-brands fa-youtube"></i>
-    <span>YouTube</span>
-  </a>
 
 </div>
   
@@ -305,8 +316,8 @@ body{
   <!-- ABOUT -->
   <div id="about">
     <p>
-      ScanGrow provides smart QR-based solutions that turn simple cards into powerful digital profiles, helping businesses connect, share, and grow effortlessly.<br><br>
-      ScanGrow.in
+      Show more about your shop, your services, and everything you offer.<br><br>
+      With - ScanGrow
     </p>
   </div>
 
@@ -321,7 +332,7 @@ function toggleAbout(){
 function sharePage(){
   if(navigator.share){
     navigator.share({
-      title:"Modern Dresses",
+      title:"ScanGrow Demo",
       text:"Check this out",
       url:window.location.href
     });
